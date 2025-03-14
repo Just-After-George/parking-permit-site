@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Permit Request</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Parking Permit Request</h1>
+    </header>
+
+    <section id="request-permit">
+        <h2>Request Your Permit</h2>
+        <form id="permit-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+            <label for="vehicle">Vehicle Plate:</label>
+            <input type="text" id="vehicle" required>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <section id="check-status">
+        <h2>Check Permit Status</h2>
+        <input type="text" id="permit-id" placeholder="Enter Permit ID">
+        <button onclick="checkStatus()">Check Status</button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
